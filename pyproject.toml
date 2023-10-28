@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "stock-analytics"
+version = "0.1.0"
+description = ""
+authors = ["NatapolLim <natapolllim@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.13"
+ipykernel = "^6.26.0"
+dynaconf = "^3.2.3"
+pandas = "^1.5.0"
+db-dtypes = "^1.1.1"
+scikit-learn = "^1.3.1"
+sktime = "^0.24.0"
+joblib = "^1.3.2"
+yfinance = "^0.2.31"
+google-cloud-storage = "^2.12.0"
+google-cloud-bigquery = "^3.12.0"
+google-cloud-pipeline-components = "^1.0.44"
+pyyaml = "^6.0.1"
+fsspec = "^2023.9.2"
+plotly = "^5.17.0"
+matplotlib = "^3.8.0"
+gcsfs = "^2023.9.2"
+seaborn = "^0.13.0"
+pandas-gbq = "^0.19.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

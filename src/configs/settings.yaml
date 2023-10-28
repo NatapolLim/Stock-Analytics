@@ -1,0 +1,8 @@
+default:
+  test: 1
+
+dev:
+  path: 2
+
+prod:
+  path: 3

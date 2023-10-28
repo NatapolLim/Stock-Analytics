@@ -4,9 +4,10 @@ version = "0.1.0"
 description = ""
 authors = ["NatapolLim <natapolllim@gmail.com>"]
 readme = "README.md"
+packages = [{include = "stock_analytics",from="src"}]
 
 [tool.poetry.dependencies]
-python = ">=3.9,<3.13"
+python = ">=3.9,<3.9.7 || >3.9.7,<3.13"
 ipykernel = "^6.26.0"
 dynaconf = "^3.2.3"
 pandas = "^1.5.0"
@@ -25,6 +26,8 @@ matplotlib = "^3.8.0"
 gcsfs = "^2023.9.2"
 seaborn = "^0.13.0"
 pandas-gbq = "^0.19.2"
+streamlit = "^1.28.0"
+tqdm = "^4.66.1"
 
 [build-system]
 requires = ["poetry-core"]

@@ -19,7 +19,7 @@ def request_all_history_data_from_yf(
         df = stock.history(period=period, interval=interval)
         df['symbol'] = name
 
-        logger.info(f"Download {name_bk}")
+        # logger.info(f"Download {name_bk}")
 
         all_df.append(df)
 

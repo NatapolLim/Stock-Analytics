@@ -2,7 +2,7 @@ default:
   test: 1
 
 dev:
-  path: 2
+  bucket_uri: gs://stock-analytics-project
 
 prod:
-  path: 3
+  bucket_uri: gs://stock-analytics-project

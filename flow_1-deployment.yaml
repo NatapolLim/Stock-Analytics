@@ -1,0 +1,47 @@
+###
+### A complete description of a Prefect Deployment for flow 'Test_flow'
+###
+name: cli deploy
+description: null
+version: 6ac6be7980baf3a55771aad618ca8b07
+# The work queue that will handle this deployment's runs
+work_queue_name: default
+work_pool_name: null
+tags: []
+parameters: {}
+schedule: null
+is_schedule_active: null
+infra_overrides: {}
+infrastructure:
+  type: process
+  env: {}
+  labels: {}
+  name: null
+  command: null
+  stream_output: true
+  working_dir: null
+  block_type_slug: process
+  _block_type_slug: process
+
+###
+### DO NOT EDIT BELOW THIS LINE
+###
+flow_name: Test_flow
+manifest_path: null
+storage: null
+path: /Users/natapollimpananuwat/Desktop/Projects/Stock-Analytics
+entrypoint: src/stock_analytics/prefect_flows/test_flow_1.py:flow_1
+parameter_openapi_schema:
+  title: Parameters
+  type: object
+  properties:
+    input:
+      title: input
+      default: Hello World
+      position: 0
+      type: string
+  required: null
+  definitions: null
+timestamp: '2023-12-02T06:31:51.399923+00:00'
+triggers: []
+enforce_parameter_schema: null

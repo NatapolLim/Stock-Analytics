@@ -1,0 +1,6 @@
+default:
+  tickers:
+    - 7UP
+    - KBANK
+    - SCB
+    - BDMS

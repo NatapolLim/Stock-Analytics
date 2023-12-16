@@ -3,6 +3,9 @@ default:
 
 dev:
   bucket_uri: gs://stock-analytics-project
+  dataset:
+    price_path: dataset/backup_data/stock_price.parquet
+    updated_price_path: dataset/updated_data/stock_price.parquet
 
 prod:
   bucket_uri: gs://stock-analytics-project

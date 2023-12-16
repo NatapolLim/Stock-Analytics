@@ -3,4 +3,4 @@
 ## Service
 - Streamlit UI
 - Stock Price DB
-- Airflow ingestion piepline
+- Prefect ingestion pipeline

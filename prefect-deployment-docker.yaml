@@ -1,0 +1,68 @@
+###
+### A complete description of a Prefect Deployment for flow 'Test_flow'
+###
+name: test-project-docker
+description: null
+version: 6ac6be7980baf3a55771aad618ca8b07
+# The work queue that will handle this deployment's runs
+work_queue_name: test
+work_pool_name: null
+tags: []
+parameters: {}
+schedule: null
+is_schedule_active: null
+infra_overrides: {}
+
+###
+### DO NOT EDIT BELOW THIS LINE
+###
+flow_name: Test_flow
+manifest_path: null
+infrastructure:
+  type: docker-container
+  env: {}
+  labels: {}
+  name: null
+  command: null
+  image: prefecthq/prefect:2.14.9-python3.11
+  image_pull_policy: null
+  image_registry: null
+  networks: []
+  network_mode: null
+  auto_remove: false
+  volumes: []
+  stream_output: true
+  memswap_limit: null
+  mem_limit: null
+  privileged: false
+  _block_document_id: 211f2a25-c121-4703-bf23-78a34e690e8f
+  _block_document_name: test-docker
+  _is_anonymous: false
+  block_type_slug: docker-container
+  _block_type_slug: docker-container
+storage:
+  repository: https://github.com/NatapolLim/Stock-Analytics
+  reference: features/load-data
+  access_token: null
+  include_git_objects: true
+  _block_document_id: c0df32f5-08d1-4646-a3ca-7e1db64f700a
+  _block_document_name: stock-analytics
+  _is_anonymous: false
+  block_type_slug: github
+  _block_type_slug: github
+path: ''
+entrypoint: src/stock_analytics/prefect_flows/test_flow_1.py:flow_1
+parameter_openapi_schema:
+  title: Parameters
+  type: object
+  properties:
+    input:
+      title: input
+      default: Hello World
+      position: 0
+      type: string
+  required: null
+  definitions: null
+timestamp: '2023-12-02T07:13:27.575460+00:00'
+triggers: []
+enforce_parameter_schema: null

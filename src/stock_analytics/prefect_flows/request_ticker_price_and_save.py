@@ -71,6 +71,7 @@ def update_data(
     df = request_to_yfinance(tickers=tickers, start_date=recent_date)
     print(f"Last data date {df.index.max().date()}")
     concat_df = pd.concat([old_df, df], axis=0)
+    save_dataframe(old_df, backup_path)
     save_dataframe(concat_df, save_path)
 
 

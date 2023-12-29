@@ -22,4 +22,5 @@ def flow_1(input: str='Hello World'):
     print(out2)
 
 if __name__ == "__main__":
-    flow_1.serve(name='test_flow_1', cron='*/1 * * * *')
+    # flow_1.serve(name='test_flow_1', cron='*/1 * * * *')
+    flow_1("woprwjefopjwdg")

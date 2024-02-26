@@ -35,6 +35,8 @@ black = "^23.12.0"
 isort = "^5.13.2"
 dvc-gs = "^3.0.1"
 pre-commit = "^3.6.0"
+backtesting = "^0.3.3"
+ta-lib = "0.4.28"
 
 [build-system]
 requires = ["poetry-core"]
